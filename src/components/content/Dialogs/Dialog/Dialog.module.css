@@ -1,0 +1,9 @@
+.dialog li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.dialog a {
+    color: white;
+    text-decoration: none;
+}

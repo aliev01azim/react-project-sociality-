@@ -1,0 +1,35 @@
+.navBar {
+    grid-area: n;
+    padding: 20px;
+    background-color: orange;
+}
+
+.navBar li {
+    list-style: none;
+    margin-bottom: 15px;
+    position: relative;
+    width: fit-content;
+}
+
+.navBar li::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: calc(101% - 1%);
+    height: 1px;
+    background: white;
+    transform: scale(0);
+    transition: .2s;
+}
+
+.navBar li:hover::after {
+    transform: scale(1);
+}
+
+.navBar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: 18px;
+}
