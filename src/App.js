@@ -13,46 +13,21 @@ import Settings from "./components/content/Settings/Settings";
 
 function App(props) {
 
+  return (
+    <BrowserRouter>
+      <div className={s.App}>
+        <Header />
+        <NavBar />
+        <div className={s.app_wrapper_content}>
+          <Route path="/Profile" render={ () => <Profile PostsData={props.state.profilePage.PostsData}/>} />
+          <Route path="/Dialogs" render={ () => <Dialogs DialogsData={props.state.DialogPage.DialogsData} MessageData={props.state.DialogPage.MessageData}/>} /> 
+          <Route path="/News" render={ () => <News />} /> 
+          <Route path="/Music" render={ () => <Music />} /> 
+          <Route path="/Settings" render={ () => <Settings />} />
+        </div>
+      </div>
+    </BrowserRouter>
+  );
+}
 
-
-    return ( <
-            BrowserRouter >
-            <
-            div className = { s.App } >
-            <
-            Header / >
-            <
-            NavBar / >
-            <
-            div className = { s.app_wrapper_content } >
-            <
-            Route path = "/Profile"
-            render = {
-                () => < Profile PostsData = { props.PostsData }
-                />} / >
-                <
-                Route path = "/Dialogs"
-                render = {
-                    () => < Dialogs DialogsData = { props.DialogsData }
-                    MessageData = { props.MessageData }
-                    />} / >
-                    <
-                    Route path = "/News"
-                    render = {
-                        () => < News / > }
-                    />  <
-                    Route path = "/Music"
-                    render = {
-                        () => < Music / > }
-                    />  <
-                    Route path = "/Settings"
-                    render = {
-                        () => < Settings / > }
-                    /> <
-                    /div> <
-                    /div> <
-                    /BrowserRouter>
-                );
-            }
-
-            export default App;
+export default App;

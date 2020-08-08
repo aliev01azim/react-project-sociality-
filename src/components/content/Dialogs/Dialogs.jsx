@@ -6,7 +6,6 @@ import Message from './Message/Message.jsx';
 
 const Dialogs = (props) => {
 
-    
 
     let DialogsElements=props.DialogsData.map(dialog=><Dialog id={dialog.id} name={dialog.name} />)
 
