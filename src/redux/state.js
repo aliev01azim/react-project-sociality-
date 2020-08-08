@@ -27,6 +27,18 @@ let state={
         {id:4,text:"asdad asdswdai sdak asfksf ask akkkk    s a asd  sadada "},
         {id:5,text:"asdad asdswdai sdak asfksf ask akkkk    s a asd  sadada "},
         {id:6,text:"asdad asdswdai sdak asfksf ask akkkk    s a asd  sadada "}]
+    },
+    NavBarPage:{
+        FriendsData:[
+        {id:1,name:'Azim'},
+        {id:2,name:'aluun'},
+        {id:3,name:'Osmo'},
+        {id:4,name:'Chika'},
+        {id:5,name:'Eldi'},
+        {id:6,name:'Akyl'},
+        {id:7,name:'Bekza'},
+        {id:8,name:'Janik'},
+        {id:9,name:'Rus'}]
     }
     
 }

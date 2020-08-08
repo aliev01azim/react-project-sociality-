@@ -3,7 +3,7 @@ import s from './Text.module.css';
 
 const Text = (props) => {
     return (
-        <div>
+        <div className={s.oba}>
             <div className={s.me}>
                 <img src="https://img.favpng.com/1/12/2/smiley-emoticon-png-favpng-2CL3nzjmcSjgdC7vmyFwrUTq9_t.jpg" />
             Me

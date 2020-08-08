@@ -33,3 +33,6 @@
     font-weight: normal;
     font-size: 18px;
 }
+.navBar li:last-of-type {
+    margin-bottom:40px
+}

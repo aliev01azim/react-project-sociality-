@@ -4,9 +4,11 @@
     border: 1px solid white;
     border-radius: 10px;
 }
-
 .me img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+.oba:nth-child(even){
+    float:right
 }
