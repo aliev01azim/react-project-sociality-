@@ -10,6 +10,13 @@ const Profile = (props) => {
 
     let PostElements = props.PostsData.map(post=> <Posts likesCount={post.id} postsDesc={post.postsDesc} />)
 
+    let newPostElement=React.createRef();
+
+    let addPost=()=>{
+        let text=newPostElement.current.value;
+        props.addPost(text)
+    }
+
     return (
         
         <div className={s.profile}>
@@ -17,9 +24,9 @@ const Profile = (props) => {
 
             <Description desc="ava + description" />
 
-            <div className={s.myPosts}>
-                <textarea></textarea>
-                <button>Add Post</button>
+            <div className={s.myPosts}> 
+                <textarea ref={newPostElement}></textarea>
+                    <button onClick={addPost}>Add Post</button>
                 {PostElements}
             </div>
         </div>
