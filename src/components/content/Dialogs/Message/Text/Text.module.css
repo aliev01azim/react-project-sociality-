@@ -3,6 +3,7 @@
     padding: 15px;
     border: 1px solid white;
     border-radius: 10px;
+    height:fit-content;
 }
 .me img {
     width: 50px;

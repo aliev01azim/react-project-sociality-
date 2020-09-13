@@ -1,11 +1,15 @@
 import React from 'react';
 import s from './ActivePost.module.css';
+import Preloader from '../../../../common/preloader/Preloader'
 
 const ActivePost = (props) => {
+    if(!props.profile){
+        return <>
+            <Preloader />
+        </>
+    }
     return (
-        <div className={s.activePost}>
-            <img src="https://thumbs.dreamstime.com/b/good-morning-two-cups-coffee-cafe-london-card-113674875.jpg" />
-        </div>
+       <img src={props.profile.photos.large} />
     )
 }
 export default ActivePost;

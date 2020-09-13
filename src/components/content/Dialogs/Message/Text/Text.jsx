@@ -9,7 +9,6 @@ const Text = (props) => {
             Me
             </div>
             <div className={s.text}>
-
                 {props.text}
             </div>
         </div>
